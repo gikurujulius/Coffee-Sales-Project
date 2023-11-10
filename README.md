@@ -22,7 +22,7 @@ The coffeeOrdersData (raw).xlsx file contains the data used. The data contains t
   -	Size
   - Unit Price
   - Sales
-1. We utilize DXLOOKUP function to collect data from the customers table for the columns Customer Name, Email, and Country.
+2. We utilize DXLOOKUP function to collect data from the customers table for the columns Customer Name, Email, and Country.
   - Under Customer Name, the formula,
     - =DXLOOKUP(C2,customers!$A$1:$A$1001,customers!$B$1:$B$1001,,0)
   - Under Email column, the data source has some empty rows. The formula 
@@ -30,28 +30,28 @@ The coffeeOrdersData (raw).xlsx file contains the data used. The data contains t
     - =IF(DXLOOKUP(C2,customers!$A$1:$A$1001,customers!$C$1:$C$1001,,0)=0,"",DXLOOKUP(C2,customers!$A$1:$A$1001, customers!$C$1:$C$1001,,0))
   - Under the column Country we apply the formula
     - =DXLOOKUP(C2,customers!$A$2:$A$1001, customers!$G$2:$G$1001,,0)
-1. Next, we source information from the products table for the remaining columns. Utilizing index match since it will be dynamic.
+3. Next, we source information from the products table for the remaining columns. Utilizing index match since it will be dynamic.
   - =INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!I$1,products!$A$1:$G$1,0))
-1. The sales values are derived from the unit price * quantity.
+4. The sales values are derived from the unit price * quantity.
 
 ## Step 3: Data Wrangling and Formatting
 1. Add column Coffee Type name to reflect the full name of the coffee types utilizing the formula
   - =IF(I2="Rob","Robusta",IF(I2="Exc","Excelsa", IF(I2="Ara", "Arabica",IF(I2="Lib","Liberica",""))))
 Rob reflects to Robusta, Exc to Excelsa, Ara to Arabica and Lib to Liberica.
-1. Add column Roast type Name to reflect the full name of the roast type.
+2. Add column Roast type Name to reflect the full name of the roast type.
 M refers to Medium
 L refers to Light
 D refers to Dark
   - •	=IF(J2="M","Medium",IF(J2="L", "Light",IF(J2="D","Dark","")))
-1. Format Order date column to reflect the date format dd-mmm-yyyy
-1. Add the metric in the Size column while keeping a one decimal place. In this scenario the metric is “Kg”
-1. Format the columns Unit Price and Sales into USD currency.
-1. Check for duplicates in the data
+3. Format Order date column to reflect the date format dd-mmm-yyyy
+4. Add the metric in the Size column while keeping a one decimal place. In this scenario the metric is “Kg”
+5. Format the columns Unit Price and Sales into USD currency.
+6. Check for duplicates in the data
 
 ## Step 4: Convert into a table
-Ctrl + T
+Press Ctrl + T
 ## Step 5: Pivot Tables and Charts
-![The dashboard output.](/Coffee Sales Dashboard.PNG)
+!(./Coffee Sales Dashboard.PNG)
 
 
 
