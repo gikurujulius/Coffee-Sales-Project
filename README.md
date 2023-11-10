@@ -52,7 +52,7 @@ D refers to Dark
 Press Ctrl + T
 
 ## Step 5: Pivot Tables and Charts
-!(./Coffee Sales Dashboard.png)
+A snapshot of the Dashboard as the Coffee Sales Dashboard.png file.
 
 
 
