@@ -50,6 +50,7 @@ D refers to Dark
 
 ## Step 4: Convert into a table
 Press Ctrl + T
+
 ## Step 5: Pivot Tables and Charts
 !(./Coffee Sales Dashboard.PNG)
 
