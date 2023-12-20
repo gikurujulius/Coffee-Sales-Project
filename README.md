@@ -32,6 +32,7 @@ The coffeeOrdersData (raw).xlsx file contains the data used. The data contains t
     - =DXLOOKUP(C2,customers!$A$2:$A$1001, customers!$G$2:$G$1001,,0)
 3. Next, we source information from the products table for the remaining columns. Utilizing index match since it will be dynamic.
   - =INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!I$1,products!$A$1:$G$1,0))
+    
 4. The sales values are derived from the unit price * quantity.
 
 ## Step 3: Data Wrangling and Formatting
