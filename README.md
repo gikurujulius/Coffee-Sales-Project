@@ -51,7 +51,7 @@ D refers to Dark
 
 ## Pivot Tables, Charts, Findings and Dashboard
 Coffee Sales Dashboard.png file is the dahsboard.
-
+An interactive dashboard is available on the coffeeordersdata.xlsx dashboard sheet
 
 
 
