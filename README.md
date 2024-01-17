@@ -49,11 +49,8 @@ D refers to Dark
 5. Format the columns Unit Price and Sales into USD currency.
 6. Check for duplicates in the data
 
-## Step 4: Convert into a table
-Press Ctrl + T
-
-## Step 5: Pivot Tables and Charts
-A snapshot of the Dashboard as the Coffee Sales Dashboard.png file.
+## Pivot Tables, Charts, Findings and Dashboard
+Coffee Sales Dashboard.png file is the dahsboard.
 
 
 
